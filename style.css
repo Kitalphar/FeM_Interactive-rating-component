@@ -150,7 +150,7 @@ main {
     outline: none;
 }
 
-#btnsubmit_rating {
+.card-btnsubmit {
     width: 100%;
     --btn-height: 2.875rem;
     height: var(--btn-height);
@@ -205,8 +205,8 @@ main {
     background-color: var(--clr-primary);
 }
 
-#btnsubmit_rating:hover,
-#btnsubmit_rating:focus-visible {
+.card-btnsubmit:hover,
+.card-btnsubmit:focus-visible {
     outline: none;
     cursor: pointer;
     color: var(--clr-neutral-800);
@@ -260,7 +260,7 @@ main {
         margin-top: 0.875rem;
     }
 
-    #btnsubmit_rating {
+    .card-btnsubmit {
         margin-top: unset;
     }
 
