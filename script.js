@@ -7,6 +7,7 @@ const card_successMessage = document.getElementById("card_success_rating");
 function onPageLoad() {
 
     try {
+        card_formRating.reset();
         card_formRating.addEventListener('submit', handleSubmit);
     } catch (error) {
         console.error(' _@/ˇ ', error);
@@ -32,6 +33,9 @@ function handleSubmit(event) {
             card_rating.classList.add("hidden");
             card_success.classList.remove("hidden");
             card_formRating.reset();
+        }
+        else {
+            alert("Please select a number!");
         }
         
     } catch (error) {

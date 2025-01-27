@@ -7,8 +7,12 @@
     --clr-primary: hsl(25, 97%, 53%);
     --clr-neutral-100: hsl(0, 0%, 100%);
     --clr-neutral-200: hsl(217, 12%, 63%);
-    --clr-neutral-600: hsl(213, 19%, 18%);
+    /* --clr-neutral-600: hsl(213, 19%, 18%); */
     --clr-neutral-800: hsl(216, 12%, 8%);
+
+    /* replacing --clr-neutral-600 from style-guide,
+        as it seems to be the wrong color */
+    --clr-card-background: hsl(215, 24%, 14%);
 
     --ff-normal: "Overpass";
     --fs-normal: 0.9375rem;
@@ -70,7 +74,8 @@ main {
 }
 
 .card {
-    background-color: var(--clr-neutral-600);
+    /* background-color: hsla( from var(--clr-neutral-600) h s l / 0.5); */
+    background-color: var(--clr-card-background);
 }
 
 .card,
@@ -151,16 +156,17 @@ main {
 }
 
 .card-btnsubmit {
-    width: 100%;
     --btn-height: 2.875rem;
     height: var(--btn-height);
+    width: 100%;
     margin-top: 1rem;
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-semi-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
     border-radius: calc(var(--btn-height) / 2);
     background-color: var(--clr-primary);
     border-style: none;
-    text-transform: uppercase;
-    font-weight: var(--fw-semi-bold);
-    letter-spacing: 0.125rem;
 }
 
 /* ------------ Thanks page ------------ */
